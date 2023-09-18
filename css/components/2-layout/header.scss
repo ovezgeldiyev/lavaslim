@@ -1,0 +1,130 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: $main;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    box-shadow: 0px 4px 4px 0px #00000021;
+  }
+  &__inner {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.header2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(3, 3, 3, 0.25);
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    box-shadow: 0px 4px 4px 0px #00000021;
+    background: #171a7e;
+  }
+  &.light {
+    &.sticky {
+      background-color: $purple;
+    }
+  }
+  &__inner {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-logo {
+      width: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// 1180px
+@mixin header-xlg-xxlg {
+  .header {
+    &__inner {
+      padding: 20px 0;
+      &-logo {
+        width: 200px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+  .header {
+    &__inner {
+      &-logo {
+        width: 180px;
+      }
+    }
+  }
+  .header2 {
+    &__inner {
+      padding: 25px 0;
+      &-logo {
+        width: 180px;
+      }
+    }
+  }
+}
+// 540px
+@mixin header-xsm-sm {
+  .header {
+    .auto__container {
+      padding: 0 20px;
+    }
+    &__inner {
+      &-logo {
+        width: 151px;
+      }
+    }
+  }
+  .header2 {
+    &__inner {
+      padding: 20px 0;
+      &-logo {
+        width: 151px;
+      }
+    }
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

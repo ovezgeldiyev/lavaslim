@@ -1,0 +1,350 @@
+h1 {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 65px;
+  font-family: $titleFont;
+  text-transform: uppercase;
+  span {
+    color: $primary;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  span {
+    color: $purple;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 100%;
+}
+
+h4 {
+}
+
+h5 {
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+  &.big {
+    font-size: 34px;
+    line-height: 100%;
+  }
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  &.big {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+p {
+  &.xsm {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  &.sm {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &.md {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  &.ex {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  &.lg {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  &.xlg {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  b {
+    font-weight: 700;
+  }
+}
+.main {
+  overflow: hidden;
+  padding-top: 98px;
+  &.sm {
+    padding: 0;
+  }
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $titleFont;
+  background: $primary;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: $black;
+  padding: 16px 22px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 1;
+    background-color: $white;
+  }
+  &.sm {
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 4px;
+    padding: 12px 34px;
+  }
+  &.secondary {
+    background-color: $purple;
+    color: $white;
+    &:hover {
+      opacity: 1;
+      background-color: $main;
+    }
+  }
+}
+.anchor {
+  position: relative;
+  top: -100px;
+}
+.video {
+  width: 100%;
+  padding-bottom: 56%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper {
+    width: 100%;
+    max-width: 950px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000065;
+  }
+  &.active {
+    opacity: 1;
+    &::after {
+      display: none;
+    }
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include fullImage;
+    &:hover {
+      & ~ .video__play.active {
+        opacity: 1;
+      }
+    }
+  }
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -45%);
+    z-index: 3;
+    cursor: pointer;
+
+    &.active {
+      opacity: 0;
+      span {
+        img {
+          display: none;
+        }
+        &::after {
+          display: block;
+        }
+        &::before {
+          display: block;
+        }
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    span {
+      width: 115px;
+      height: 115px;
+      background-color: $white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 15px;
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        width: 7%;
+        height: 40%;
+        background-color: $purple;
+        transform: translateY(-50%);
+        border-radius: 3px;
+      }
+      &::before {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 35%;
+        width: 7%;
+        height: 40%;
+        background-color: $purple;
+        transform: translateY(-50%);
+        border-radius: 3px;
+      }
+      img {
+        width: 26%;
+      }
+    }
+    b {
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 700;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+}
+.banner {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 4px solid $primary;
+  background-color: #2063cd;
+  padding: 20px 40px;
+  text-align: center;
+  color: $white;
+  font-family: $titleFont;
+  box-shadow: 0px 8px 6px 1px rgba(0, 0, 0, 0.25);
+  &.light {
+    background-color: $primary;
+    border-color: #2063cd;
+    color: $black;
+  }
+  p,
+  h6 {
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  h6 {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+}
+.radio {
+  display: flex;
+  align-items: flex-start;
+  &__btn {
+    width: 22px;
+    height: 22px;
+    margin: 4px 14px 0 0;
+    position: relative;
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0;
+      &:checked ~ span {
+        border-color: #2063CD;
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #B0B0B0;
+      background-color: $white;
+      transition: .3s ease;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 14px;
+        height: 14px;
+        border-radius: 4px;
+        background-color: #2063CD;
+        content: "";
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .3s ease;
+      }
+    }
+  }
+  p {
+    width: calc(100% - 32px);
+  }
+}
+.input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    border-radius: 8px;
+    border: 1px solid #B0B0B0;
+    padding: 15px 20px;
+    font-family: $mainFont;
+    font-size: 24px;
+    line-height: 30px;
+    color: $black2;
+    font-weight: 400;
+  }
+}
+.signature {
+  p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    font-family: $carosello;
+    font-style: italic;
+    font-weight: 400;
+  }
+}

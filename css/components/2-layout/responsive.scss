@@ -1,0 +1,372 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  @include hero-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  h6 {
+    font-size: 24px;
+    line-height: 30px;
+    &.big {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+  p {
+    &.lg {
+      font-size: 26px;
+      line-height: 40px;
+    }
+  }
+  body {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .button {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 12px;
+    &.sm {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 10px 26px;
+    }
+  }
+  .main {
+    padding-top: 85px;
+  }
+  @include header-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include bonus-xlg-xxlg;
+  @include bottles-xlg-xxlg;
+
+  @include discount-xlg-xxlg;
+  @include book-xlg-xxlg;
+  @include download-xlg-xxlg;
+  @include object-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .auto__container {
+    padding: 0 30px;
+  }
+  .main {
+    padding-top: 71.08px;
+  }
+  h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  h5 {
+    &.big {
+      font-size: 30px;
+    }
+  }
+  h6 {
+    font-size: 22px;
+    line-height: 28px;
+    &.big {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include intro-lg-xlg;
+  @include about-lg-xlg;
+  @include ingredient-lg-xlg;
+  @include bottles-lg-xlg;
+  @include warranty-lg-xlg;
+
+  @include discount-lg-xlg;
+  @include book-lg-xlg;
+  @include today-lg-xlg;
+
+  @include policy-lg-xlg;
+  @include info-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .button {
+    padding: 16px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .anchor {
+    top: -60px;
+  }
+  @include hero-md-lg;
+  @include intro-md-lg;
+  @include about-md-lg;
+  @include ingredient-md-lg;
+  @include bonus-md-lg;
+  @include advantage-md-lg;
+  @include faq-md-lg;
+  @include bottles-md-lg;
+
+  @include discount-md-lg;
+  @include today-md-lg;
+  @include info-md-lg;
+  @include object-md-lg;
+
+}
+// 840px
+@include md-lg-extra {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+    &.sm {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  h6 {
+    font-size: 22px;
+    line-height: 28px;
+    &.big {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  h6 {
+    &.big {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  p {
+    &.lg {
+      font-size: 23px;
+      line-height: 35px;
+    }
+  }
+  body {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .video {
+    &__play {
+      span {
+        width: 85px;
+        height: 85px;
+        margin-bottom: 8px;
+      }
+      b {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+  .banner {
+    padding: 20px 30px;
+    p,
+    h6 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+  .input {
+    input {
+      font-size: 22px;
+    }
+  }
+  @include hero-md-lg-extra;
+  @include intro-md-lg-extra;
+  @include about-md-lg-extra;
+  @include ingredient-md-lg-extra;
+  @include bonus-md-lg-extra;
+  @include advantage-md-lg-extra;
+  @include warranty-md-lg-extra;
+  @include faq-md-lg-extra;
+
+  @include reviews-md-lg-extra;
+  @include discount-md-lg-extra;
+  @include book-md-lg-extra;
+  @include today-md-lg-extra;
+  @include transport-md-lg-extra;
+  @include policy-md-lg-extra;
+  @include download-md-lg-extra;
+
+  @include market-md-lg-extra;
+  @include info-md-lg-extra;
+  @include object-md-lg-extra;
+
+}
+// 750px
+@include sm-md {
+  @include hero-sm-md;
+  @include today-sm-md;
+  @include transport-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  h5 {
+    &.big {
+      font-size: 34px;
+    }
+  }
+  @include hero-sm-md-extra;
+  @include intro-sm-md-extra;
+  @include ingredient-sm-md-extra;
+  @include bonus-sm-md-extra;
+  @include faq-sm-md-extra;
+
+  @include reviews-sm-md-extra;
+  @include today-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  .main {
+    padding-top: 66.08px;
+  }
+  h6 {
+    font-size: 20px;
+    line-height: 26px;
+    &.big {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  p {
+    &.lg {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .video {
+    padding-bottom: 63%;
+    &__wrapper {
+      width: calc(100% + 34px);
+      margin: 0 -17px;
+    }
+    &__play {
+      span {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 5px;
+      }
+      b {
+        font-size: 14px;
+        line-height: 32px;
+      }
+    }
+  }
+  .banner {
+    margin-top: 24px;
+    padding: 18px 16px;
+    p,
+    h6 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    h6 {
+      margin-bottom: 0;
+    }
+  }
+  .signature {
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+  }
+  .input {
+    input {
+      font-size: 20px;
+      line-height: 28px;
+      padding: 15px;
+    }
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include hero-xsm-sm;
+  @include intro-xsm-sm;
+  @include about-xsm-sm;
+  @include advantage-xsm-sm;
+  @include warranty-xsm-sm;
+  @include bonus-xsm-sm;
+  @include faq-xsm-sm;
+  @include reference-xsm-sm;
+  @include bottles-xsm-sm;
+  @include footer-xsm-sm;
+
+  @include countdown-xsm-sm;
+  @include discount-xsm-sm;
+  @include book-xsm-sm;
+  @include today-xsm-sm;
+  @include transport-xsm-sm;
+  @include terms-xsm-sm;
+  @include policy-xsm-sm;
+  @include download-xsm-sm;
+  @include market-xsm-sm;
+  @include info-xsm-sm;
+  @include object-xsm-sm;
+
+}
+// 440px
+@include xxsm-xsm {
+  @include hero-xxsm-xsm;
+  @include intro-xxsm-xsm;
+}
+// 380px
+@include xxxsm-xxsm {
+  .auto__container {
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .video {
+    &__wrapper {
+      margin: 0 -10px;
+      width: calc(100% + 20px);
+    }
+    &__play {
+      span {
+        width: 50px;
+        height: 50px;
+      }
+      b {
+        font-size: 11px;
+        line-height: 20px;
+      }
+    }
+  }
+  @include today-xxxsm-xxsm;
+}

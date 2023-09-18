@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('brandon-grotesque-black.otf') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('brandon-grotesque-light.otf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brandon Text';
+    src: url('BrandonText-Light.otf') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brandon Text';
+    src: url('BrandonText-Regular.otf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brandon Text';
+    src: url('BrandonText-RegularItalic.otf') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brandon Text';
+    src: url('BrandonText-Bold.otf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noe Display';
+    src: url('noe-display-bold-italic.ttf') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noe Display';
+    src: url('Noe-Display-Regular-Italic.ttf') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Carosello';
+    src: url('Carosello-Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}

@@ -1,0 +1,183 @@
+.policy {
+  padding: 60px 0 70px;
+  font-weight: 400;
+  &__inner {
+    &-item {
+      margin-bottom: 90px;
+      &:last-child {
+        margin: 0;
+      }
+      h5 {
+        font-size: 32px;
+        line-height: 100%;
+        color: $purple;
+        margin-bottom: 35px;
+        padding-left: 34px;
+        font-weight: 700;
+        position: relative;
+        b {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-weight: 700;
+        }
+      }
+    }
+    &-form {
+      padding: 35px 0 0 100px;
+      & > p {
+        margin-bottom: 20px;
+      }
+    }
+    &-radios {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 30px;
+        padding-left: 20px;
+        position: relative;
+        font-weight: 400;
+        &::before {
+          position: absolute;
+          top: 14px;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $black2;
+          content: "";
+        }
+      }
+    }
+    .radio {
+      margin-bottom: 15px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .input {
+      width: 100%;
+      max-width: 466px;
+      margin-bottom: 30px;
+    }
+    .button {
+      font-size: 24px;
+      line-height: 32px;
+      width: 100%;
+      max-width: 466px;
+      padding: 16px;
+    }
+    p {
+      span {
+        color: #2063cd;
+        font-weight: 700;
+      }
+    }
+  }
+}
+// 1024px
+@mixin policy-lg-xlg {
+  .policy {
+    padding: 50px 0;
+    &__inner {
+      &-item {
+        margin-bottom: 60px;
+        h5 {
+          margin-bottom: 25px;
+        }
+      }
+      &-form {
+        padding: 25px 0 0 50px;
+      }
+    }
+  }
+}
+// 840px
+@mixin policy-md-lg-extra {
+  .policy {
+    font-size: 22px;
+    line-height: 30px;
+    &__inner {
+      &-item {
+        margin-bottom: 40px;
+      }
+      &-form {
+        padding: 25px 0 0 0;
+      }
+      .button {
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 446px;
+      }
+      .input {
+        max-width: 446px;
+        input {
+          font-size: 22px;
+        }
+      }
+      ul {
+        li {
+          margin-bottom: 17px;
+        }
+      }
+    }
+  }
+}
+// 540px
+@mixin policy-xsm-sm {
+  .policy {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 47px 0 100px;
+    &__inner {
+      &-item {
+        margin-bottom: 70px;
+        h5 {
+          margin-bottom: 30px;
+          margin-left: 10px;
+          padding-left: 37px;
+        }
+      }
+      &-form {
+        padding: 30px 0 0 0;
+        & > p {
+          margin-bottom: 16px;
+        }
+      }
+      .input {
+        margin-bottom: 50px;
+        input {
+          font-size: 20px;
+          line-height: 28px;
+          padding: 15px;
+        }
+      }
+      .radio {
+        span {
+          &::before {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+          }
+        }
+      }
+      .button {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      ul {
+        padding-left: 10px;
+        li {
+          margin-bottom: 30px;
+          &::before {
+            top: 13px;
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+}

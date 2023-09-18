@@ -1,0 +1,223 @@
+.book {
+  background-color: #f5f5f5;
+  padding: 44px 0;
+  &__inner {
+    &-title {
+      text-align: center;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    &-text {
+      text-align: center;
+      max-width: 1010px;
+      margin: 0 auto;
+    }
+  }
+  &Card {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 17px 20px -7px rgba(0, 0, 0, 0.09);
+    margin: 44px 0;
+    &__image {
+      width: 38%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 3;
+      &-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-bottom: 106%;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include fullImage;
+        }
+      }
+    }
+    &__content {
+      width: 62%;
+      padding: 34px 30px 44px 68px;
+      background-color: #fffedd;
+      p {
+        max-width: 580px;
+      }
+    }
+    h5 {
+      margin: 18px 0 20px -70px;
+      background: linear-gradient(90deg, #0e76bc 30.15%, #92278f 68.16%);
+      font-size: 32px;
+      line-height: 44px;
+      font-weight: 700;
+      color: $white;
+      display: flex;
+      align-items: center;
+      padding: 5px 36px 5px 70px;
+      max-width: 507px;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        width: 28px;
+        height: 100%;
+        clip-path: polygon(100% 100%, 100% 0, 0 50%);
+        content: "";
+        background-color: #fffedd;
+      }
+      span {
+        color: $primary;
+        text-transform: uppercase;
+        font-size: 44px;
+        line-height: 61px;
+        margin-left: 8px;
+      }
+      b {
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 57%;
+          left: 0;
+          width: 100%;
+          height: 1.5px;
+          background-color: $white;
+          content: "";
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+// 1180px
+@mixin book-xlg-xxlg {
+  .book {
+    &Card {
+      &__content {
+        padding: 30px 30px 40px 30px;
+      }
+      h5 {
+        margin: 15px 0 16px -31px;
+        max-width: 480px;
+        padding: 5px 36px 5px 31px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin book-lg-xlg {
+  .book {
+    &Card {
+      margin: 30px 0;
+      &__content {
+        padding: 20px 20px 30px 20px;
+      }
+      h5 {
+        margin: 15px 0 16px -21px;
+        max-width: 400px;
+        padding: 3px 30px 3px 21px;
+        font-size: 26px;
+        line-height: 34px;
+        span {
+          font-size: 38px;
+          line-height: 50px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+// 930px
+@mixin book-md-lg {
+  .book {
+    &__inner {
+    }
+  }
+}
+// 840px
+@mixin book-md-lg-extra {
+  .book {
+    &__inner {
+      &-text {
+        p {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+    &Card {
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0;
+      box-shadow: unset;
+      overflow: visible;
+      &__image {
+        width: 75%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 11px 16px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        &-inner {
+          padding-bottom: 122%;
+        }
+      }
+      &__content {
+        width: 100%;
+        border-radius: 20px;
+        text-align: center;
+        padding: 35px 30px 40px;
+        box-shadow: 0px 17px 20px -7px rgba(0, 0, 0, 0.09);
+        p {
+          max-width: unset;
+        }
+      }
+      h5 {
+        max-width: unset;
+        margin: 20px -30px;
+        width: calc(100% + 60px);
+        justify-content: center;
+        font-size: 32px;
+        line-height: 36px;
+        padding: 8px 30px;
+        &::before {
+          display: none;
+        }
+        span {
+          font-size: 42px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}
+// 540px
+@mixin book-xsm-sm {
+  .book {
+    padding: 36px 0;
+    &Card {
+      &__image {
+        width: 100%;
+        margin-bottom: -16px;
+      }
+      &__content {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 46px 30px 18px;
+      }
+      h5 {
+        margin: 15px -30px;
+        flex-direction: column;
+        align-items: center;
+        span {
+            margin: 5px 0 0 0;
+        }
+      }
+    }
+  }
+}

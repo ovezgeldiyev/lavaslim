@@ -1,0 +1,150 @@
+.footer {
+  background-color: $main;
+  &.light {
+    background-color: #EDEDED;
+    .footer__inner {
+      color: $black2;
+      &-copy {
+        margin-top: 30px;
+      }
+    }
+  }
+  &.uniq {
+    background-color: unset;
+    .footer__inner {
+      color: $white;
+      padding: 20px 0 80px;
+      &-copy {
+        margin-top: 30px;
+      }
+    }
+  }
+  &Top {
+    padding: 20px 0 23px;
+    background-color: $purple;
+    color: $white;
+    &__inner {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        color: $white;
+        font-weight: 400;
+        margin: 5px 10px;
+        font-size: 18px;
+        line-height: 32px;
+        &:hover {
+          opacity: 1;
+          color: $primary;
+        }
+      }
+    }
+  }
+  &__inner {
+    padding: 40px 0 55px;
+    color: $white;
+    text-align: center;
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0 60px;
+      max-width: 1085px;
+      margin: 0 auto;
+      a {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 5px 10px;
+        &:hover {
+            opacity: 1;
+            color: $primary;
+        }
+      }
+    }
+    &-text {
+      p {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+    &-copy {
+      br {
+        display: none;
+      }
+      
+    }
+    p {
+      a {
+        color: inherit;
+        font-weight: 700;
+      }
+    }
+  }
+}
+// 540px
+@mixin footer-xsm-sm {
+  .footer {
+    &.uniq {
+      .footer {
+        &__inner {
+          padding: 58px 0 65px;
+          &-copy {
+            margin-top: 40px
+            ;
+          }
+        }
+      }
+    }
+    &Top {
+      padding: 12px 0;
+      &__inner {
+        max-width: 300px;
+        a {
+          white-space: nowrap;
+          width: calc(50% - 10px);
+          margin: 5px;
+        }
+      }
+    }
+    &__inner {
+      padding: 34px 0 56px;
+      &-row {
+        padding: 24px 0;
+        max-width: 320px;
+        a {
+          width: calc(50% - 20px);
+          max-width: 126px;
+          margin: 6px;
+          text-align: start;
+        }
+      }
+      &-text {
+        p {
+          b {
+            display: block;
+          }
+        }
+      }
+      &-copy {
+        br {
+          display: block;
+        }
+        span {
+          display: none;
+        }
+      }
+      p {
+        a {
+          // display: block;
+        }
+      }
+    }
+  }
+}
+
